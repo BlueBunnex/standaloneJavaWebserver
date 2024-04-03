@@ -3,7 +3,11 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class Server {
+public class SimpleServer {
+
+    /*
+    * This server only handles a single request before closing.
+    */
 
     public static void main(String[] args) {
     
