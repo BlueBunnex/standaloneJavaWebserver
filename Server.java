@@ -1,7 +1,7 @@
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Scanner
+import java.util.Scanner;
 
 public class Server {
 
@@ -47,7 +47,7 @@ public class Server {
 			server.close();
 		
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.err.println("Something went wrong.");
 		}
 		
 	}
