@@ -4,10 +4,11 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class Server {
-	
+
 	public static void main(String[] args) {
+		
 		try {
-			
+		
 			// create server
 			ServerSocket server = new ServerSocket(0);
 			
@@ -27,15 +28,15 @@ public class Server {
 			out.print("HTTP/1.1 200 OK\n\n");
 			
 			out.print("<!DOCTYPE html>"
-					+ "<html>"
-					+ "<head>"
-					+ "<meta charset='UTF-8'>"
-					+ "<title>Title of the document</title>"
-					+ "</head>"
-					+ "<body>"
-					+ "Content of the document......"
-					+ "</body>"
-					+ "</html>");
+						+ "<html>"
+						+ "<head>"
+						+ "<meta charset='UTF-8'>"
+						+ "<title>Title of the document</title>"
+						+ "</head>"
+						+ "<body>"
+						+ "Content of the document......"
+						+ "</body>"
+						+ "</html>");
 			
 			out.flush();
 			
@@ -44,10 +45,11 @@ public class Server {
 			out.close();
 			client.close();
 			server.close();
-			
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 	}
 
 }
