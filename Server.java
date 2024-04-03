@@ -13,7 +13,7 @@ public class Server {
 			
 			System.out.println("put this in your web-browser -> http://127.0.0.1:" + server.getLocalPort());
 			
-			// establish client connection
+			// establish client connection and IO
 			Socket client = server.accept();
 			Scanner in = new Scanner(client.getInputStream());
 			PrintWriter out = new PrintWriter(client.getOutputStream());
